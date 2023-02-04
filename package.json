@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "webpack": "webpack -d"
+    "webpack": "webpack -d",
+    "build": "webpack --watch",
+    "clean": "tsc --build --clean"
   },
   "keywords": [],
   "author": "",

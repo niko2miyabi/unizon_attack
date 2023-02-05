@@ -17,10 +17,11 @@ export const QuestPage = () => {
             <Header />
             <SWrapper>
                 <div>
-                <h2>イベント周回用計算機</h2>
                 {/* ▽ イベントバナー ▽ */}
                 <Bnr />
                 {/* △ イベントバナー △ */}
+
+                <h2>イベント周回用計算機</h2>
 
                 {/* ▽ 計算入力 ▽ */}
                 <Calculation goalPoint={goalPoint} setGoalPoint={setGoalPoint} setCurrentPoint={setCurrentPoint} setCurrentSelected={setCurrentSelected} setMagnification={setMagnification} currentPoint={currentPoint} currentSelected={currentSelected} magnification={magnification} / >

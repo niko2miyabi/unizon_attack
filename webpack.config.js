@@ -7,14 +7,16 @@ module.exports = {
       filename: "[name].js"
     },
       devServer: {
-      port: 8080,
-      devMiddleware: {
-        publicPath: '/js/'
-      },
-      static: {
-        directory: __dirname + '/public',
+        port: 8080,
+        historyApiFallback: true,
+        devMiddleware: {
+          publicPath: '/js/'
+        },
+        static: {
+          directory: __dirname + '/public',
       }
     },
+    
     devtool: "eval-source-map",
     mode: 'development',
     module: {
@@ -30,6 +32,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
-       }]
+       }
+      ]
     }
   };

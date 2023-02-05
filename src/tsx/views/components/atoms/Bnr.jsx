@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import { bnrImgPath } from "../../../../utils/questData.jsx"
 
 export const Bnr = () => {
-    return (
+    return ( 
         <SBner>
-            <img src={`${window.location.origin}/images/bnr.png`} alt="" />
+            <img src={bnrImgPath} alt="" />
         </SBner>
     )
 }

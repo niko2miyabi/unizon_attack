@@ -2,7 +2,8 @@
     "parser": "babel-eslint",
     "env": {
       "browser": true,
-      "es6": true
+      "es6": true,
+      "node": true
     },
     "parserOptions": {
       "sourceType": "module",
@@ -14,7 +15,8 @@
     "extends": ["eslint:recommended", "plugin:react/recommended"],
     "plugins": ["react"],
     "rules": {
-      "no-console": "off"
+      "no-console": "off",
+      "react/prop-types": "off"
     },
     "settings": {
       "react": {
